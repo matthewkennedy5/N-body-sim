@@ -6,9 +6,9 @@ import pdb
 X, Y, VX, VY, MASS = range(5)
 WINDOW_WIDTH = 1800
 WINDOW_HEIGHT = 1000
-PARTICLES = 50
-TIME_DELAY = 0
-REPULSION = 0.1
+PARTICLES = 3
+TIME_DELAY = 0.01
+REPULSION = 1
 VELOCITY_STD = 1
 
 class Simulator:
@@ -69,9 +69,9 @@ class Simulator:
                 r = np.array([xj - xi, yj - yi])
                 mass2 = self.physics[j, MASS]
                 distance = np.linalg.norm(r)
-                accel =  mass1 * mass2 / (distance ** 2)
+                accel = mass2 / (distance ** 2)
 
-                # # Repulsion
+                # Repulsion
                 # if distance < 10:
                 #     accel -= REPULSION
                 dV += accel * r
