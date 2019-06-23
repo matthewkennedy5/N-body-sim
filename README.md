@@ -1,9 +1,11 @@
 # N-body-sim
 https://en.wikipedia.org/wiki/N-body_simulation
 
-An N body simulation is a calculation of the physical motion of massive bodies that all exert forces on each other. One example is asteroids in an asteroid field, which all exert gravitational forces on each other. This problem is interesting because it is a chaotic system for systems involving at least three bodies, which means you can't write down an equation that will predict the motion of the bodies, and you have to use numerical methods. This chaotic behavior leads to mesmerizing animations.
+An N body simulation is a calculation of the physical motion of massive bodies that exert forces on one another. For example, the motion of the asteroids in an asteroid field is governed by their gravitational interactions. It turns out that when you have at least three asteroids, it's impossible to analytically predict the behavior of the system in advance--leading to mesmerizing visualizations. 
 
 ![](nbody2.gif)
+
+This simulator models the motion of asteroids in 2D space under 1/r^2 gravitational interactions. 
 
 ## Running the simulator
 
