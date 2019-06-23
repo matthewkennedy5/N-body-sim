@@ -5,7 +5,7 @@ An N body simulation is a calculation of the physical motion of massive bodies t
 
 ![](nbody2.gif)
 
-This simulator models the motion of asteroids in 2D space under 1/r^2 gravitational interactions. 
+This simulator models the motion of asteroids in 2D space under 1/r^2 gravitational interactions. The asteroid diameters are proportional to their masses and are generated from a log-normal distribution.
 
 ## Running the simulator
 
